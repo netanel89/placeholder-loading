@@ -4,13 +4,13 @@
     box-sizing: border-box;
   }
 
-  direction: ltr;
+  direction: rtl;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: $ph-gutter ($ph-gutter / 2) ($ph-gutter - $ph-spacer) ($ph-gutter / 2);
+  padding: $ph-gutter;
   overflow: hidden;
-  margin-bottom: $ph-gutter;
+  //margin-bottom: $ph-gutter;
   background-color: $ph-bg;
   border: 1px solid darken($ph-bg, 10%);
   border-radius: $ph-border-radius;
@@ -41,25 +41,33 @@
 .ph-row {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: ($ph-spacer / 2);
+  //margin-bottom: ($ph-spacer / 2);
 
   div {
     height: 10px;
-    margin-bottom: ($ph-spacer / 2);
+    //margin-bottom: ($ph-spacer / 2);
     background-color: $ph-color;
   }
   .big,
   &.big div {
     height: 20px;
-    margin-bottom: $ph-spacer;
+    //margin-bottom: $ph-spacer;
   }
   .empty {
     background-color: rgba($ph-bg, 0);
   }
 }
-
+.ph-col-1 {
+  flex: 0 0 percentage(1 / 12);
+}
+.ph-col-1-5 {
+  flex: 0 0 percentage(1.5 / 12);
+}
 .ph-col-2 {
   flex: 0 0 percentage(2 / 12);
+}
+.ph-col-3 {
+  flex: 0 0 percentage(3 / 12);
 }
 .ph-col-4 {
   flex: 0 0 percentage(4 / 12);
@@ -82,7 +90,7 @@
   width: 100%;
   min-width: 60px;
   background-color: $ph-color;
-  margin-bottom: $ph-spacer;
+  //margin-bottom: $ph-spacer;
   border-radius: $ph-avatar-border-radius;
   overflow: hidden;
 
@@ -97,7 +105,7 @@
   width: 100%;
   height: 120px;
   background-color: $ph-color;
-  margin-bottom: $ph-spacer;
+  //margin-bottom: $ph-spacer;
 }
 
 @keyframes phAnimation {

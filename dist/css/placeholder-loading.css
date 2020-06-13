@@ -4,16 +4,15 @@
  * License: MIT
  **/
 .ph-item {
-  direction: ltr;
+  direction: rtl;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: 30px 15px 15px 15px;
+  padding: 15px;
   overflow: hidden;
-  margin-bottom: 30px;
   background-color: #fff;
   border: 1px solid #e6e6e6;
-  border-radius: 2px; }
+  border-radius: 1px; }
   .ph-item, .ph-item *,
   .ph-item ::after, .ph-item ::before {
     box-sizing: border-box; }
@@ -34,26 +33,32 @@
     flex: 1 1 auto;
     display: flex;
     flex-flow: column;
-    padding-right: 15px;
-    padding-left: 15px; }
+    padding-right: 7.5px;
+    padding-left: 7.5px; }
 
 .ph-row {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 7.5px; }
+  flex-wrap: wrap; }
   .ph-row div {
     height: 10px;
-    margin-bottom: 7.5px;
     background-color: #ced4da; }
   .ph-row .big,
   .ph-row.big div {
-    height: 20px;
-    margin-bottom: 15px; }
+    height: 20px; }
   .ph-row .empty {
     background-color: rgba(255, 255, 255, 0); }
 
+.ph-col-1 {
+  flex: 0 0 8.33333%; }
+
+.ph-col-1-5 {
+  flex: 0 0 12.5%; }
+
 .ph-col-2 {
   flex: 0 0 16.66667%; }
+
+.ph-col-3 {
+  flex: 0 0 25%; }
 
 .ph-col-4 {
   flex: 0 0 33.33333%; }
@@ -75,7 +80,6 @@
   width: 100%;
   min-width: 60px;
   background-color: #ced4da;
-  margin-bottom: 15px;
   border-radius: 50%;
   overflow: hidden; }
   .ph-avatar::before {
@@ -86,8 +90,7 @@
 .ph-picture {
   width: 100%;
   height: 120px;
-  background-color: #ced4da;
-  margin-bottom: 15px; }
+  background-color: #ced4da; }
 
 @-webkit-keyframes phAnimation {
   0% {
